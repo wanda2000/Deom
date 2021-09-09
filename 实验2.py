@@ -1,7 +1,16 @@
-import getpass
-username = input("输入你的用户名：")
-passwd = getpass.getpass("输入您的密码:")
-if(username=='xiong' and passwd=='password'):
-    print("登入成功")
-else:
-    print("登入失败")
+#比较id值
+'''
+=2
+y=2
+print(x==y)
+print(x is y)
+'''
+x=y=[1,2,3,4,5]
+print(x==y)
+print(x is y)
+x.append(6)
+z=[1,2,3,4,5,6]
+print(z==x)
+print(z==y)
+print(z is x)
+print(z is y)
