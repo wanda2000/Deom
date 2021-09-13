@@ -46,3 +46,4 @@ while i<=n :
         i+=1
 print("n={0},sn={1}".format(n,sn))
 '''
+# 数据类型*******
