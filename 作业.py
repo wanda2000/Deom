@@ -5,11 +5,10 @@ while i!=0 and i!=1 and i!=2:
     i = int(input('重新输入i（0、1、2）\n'))
     if i==0 or i==1 or i==2:
         break
-print("本函数以一方胜出结束")
-
+print("游戏以你胜出结束")
 while True:
     if i==0 and j==2 or i==1 and j==0 or i==2 and j==1:
-        print("You are a winer\n并且你输入的是{0},机器输入的是{1}".format(i,j))
+        print("You are a winer,并且你输入的是{0},机器输入的是{1}".format(i,j))
         break
     if i==0 and j==1 or i==1 and j==2 or i==2 and j==0:
         print("You are a loser并且你输入的是{0},机器输入的是{1}".format(i,j))
