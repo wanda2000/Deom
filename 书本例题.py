@@ -228,4 +228,4 @@ k=int(math.sqrt(m))
 flag=True
 i=2
 while i<k and flag:
-    if ()
+    if 
