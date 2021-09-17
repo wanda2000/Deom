@@ -222,10 +222,40 @@ print("n={0},sn={1}".format(n,sn))
 # else:
 #     print("是和数")
 
-import math
-m=int(input("输入一个大于1的整数："))
-k=int(math.sqrt(m))
-flag=True
-i=2
-while i<k and flag:
-    if 
+# import math
+# m=int(input("输入一个大于1的整数："))
+# k=int(math.sqrt(m))
+# flag=True
+# i=2
+# while i<=k and flag==True:
+#     if m%i==0:
+#         flag=False
+#     else:
+#         i+=1
+# if flag==True:
+#     print("该数是素数")
+# else:
+#     print("该数是和数")
+'''学生成绩'''
+# count=0;avge=0
+# while True:
+#     i=input("输入学生成绩(按q或者Q结束)：")
+#     if i<'0':
+#         i = input("重新输入学生成绩(按q或者Q结束)：")
+#     elif i.upper()=='Q':
+#         break
+#     count+=1
+#     avge+=float(i)
+# print("学生人数是：{0:2},平均成绩是：{1:.2f}".format(count,avge/count))
+
+# num=1;scores=0
+# while True:
+#     s= input("输入学生成绩(按q或者Q结束)：")
+#     if s.upper()=='Q':
+#         break
+#     if float(s)<0:
+#         continue
+#     num+=1
+#     scores+=float(s)
+# print("学生人数是：{0:2},平均成绩是：{1:.2f}".format(num,scores/num))
+
