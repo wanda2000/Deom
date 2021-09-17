@@ -210,3 +210,22 @@ print("n={0},sn={1}".format(n,sn))
 #         print("{0:1}*{1:1}={2:<3}".format(i, j, i * j), end='')
 #     print('')
 #     i+=1
+'''素数'''
+# import math
+# m=int(input("输入一个大于1的整数："))
+# k=int(math.sqrt(m))
+# for i in range(2,k+2):
+#     if m%i==0:
+#         break
+# if i==k+1:
+#     print(m,"是素数")
+# else:
+#     print("是和数")
+
+import math
+m=int(input("输入一个大于1的整数："))
+k=int(math.sqrt(m))
+flag=True
+i=2
+while i<k and flag:
+    if ()
