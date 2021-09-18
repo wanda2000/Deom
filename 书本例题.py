@@ -258,4 +258,12 @@ print("n={0},sn={1}".format(n,sn))
 #     num+=1
 #     scores+=float(s)
 # print("学生人数是：{0:2},平均成绩是：{1:.2f}".format(num,scores/num))
+'''例题六'''
+# j=0
+# for i in range(2000,3001):
+#     if(i%4==0 and i%100!=0 or i%400==0):
+#         print(str.format("{0:6}",i),end='')
+#         j+=1
+#         if j%18==0:
+#            print()
 
