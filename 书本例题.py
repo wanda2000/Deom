@@ -267,3 +267,29 @@ print("n={0},sn={1}".format(n,sn))
 #         if j%18==0:
 #            print()
 
+# sn=0
+# i=1
+# flag=-1
+# while i<=100:
+#     if i%2!=0:
+#         flag=-flag
+#         sn+=i*flag
+#     i+=1
+# print(sn, end='')
+
+# import math
+# s=0
+# a=float(input("输入边长a:"))
+# b=float(input("输入边长b:"))
+# c=float(input("输入边长c:"))
+# while a<=0 or b<=0 or c<=0 or a+b<=c or a+c<=b or b+c<=a:
+#     print("不能构成三角形")
+#     print("重新输入边长a,b,c")
+#     a = float(input("输入边长a:"))
+#     b = float(input("输入边长b:"))
+#     c = float(input("输入边长c:"))
+# h=(a+b+c)/2
+# s=math.sqrt(h*(h-a)*(h-b)*(h-c))
+# print("三角形的面积为：",s)
+
+
