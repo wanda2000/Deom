@@ -165,15 +165,33 @@
 # ls=[[1,2,3],[[4,5],6],[7,8]]
 # print(len(ls))
 
-a=[
-    ['熊俊勇',18,'江西宜春'],
-    ['杨城',18,'江西赣州'],
-    ['肖鹏钒',18,'江西吉安'],
-    ['曹达超',18,'江西九江'],
-  ]
-print(len(a))
-for i in range(4):
-    for j in range(3):
-        print(a[i][j],end='\t')
-    print()
+# a=[
+#     ['熊俊勇',18,'江西宜春'],
+#     ['杨城',18,'江西赣州'],
+#     ['肖鹏钒',18,'江西吉安'],
+#     ['曹达超',18,'江西九江'],
+#   ]
+# print(len(a))
+# for i in range(4):
+#     for j in range(3):
+#         print(a[i][j],end='\t')
+#     print()
 
+# a='ancdefghijklmnopqrstuvwxyz'
+# a = a.replace('n','熊')
+# print(a)
+# print(type(a))
+# print(a[::-1])
+# print(a[1:])
+# print(a[-8:-3:2])
+# print(a[19:9:-1])
+#
+# #practice:
+# 1、将
+a=[1,3,5,7,7,7,5,3,2]
+print(len(a))
+for i in range(len(a)):
+    for j in a:
+        if j == 7:
+            a.remove(j)
+print(a)
