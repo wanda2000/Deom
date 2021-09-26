@@ -121,27 +121,67 @@ a=[1,3,5,7,7,7,5,3]
 # time_04 = time.time()
 # print(time_04-time_03)
 
-import turtle
+#棋盘
+# import turtle
+#
+# t = turtle.Pen()
+# color_01=("orange","gold","pink","brown","grey","purple","blue"\
+#         ,"yellow","green","black","white","red","gold","pink","brown","grey","purple","blue","blue")
+# x = [-200,100]
+# y = [-20,-80]
+# t.speed(10)
+# for i in range(0,19):
+#     t.penup()
+#     t.color(color_01[i])
+#     t.goto(x[0],100-10*i)
+#     t.pendown()
+#     t.goto(y[0],100-10*i)
+#
+# for j in range(0,19):
+#     t.penup()
+#     t.color(color_01[j])
+#     t.goto(x[0]+10*j,x[1])
+#     t.pendown()
+#     t.goto(x[0]+10*j,y[1])
+#
+# t.hideturtle()
+# turtle.done()
 
-t = turtle.Pen()
-color_01=("orange","gold","pink","brown","grey","purple","blue"\
-        ,"yellow","green","black","white","red","gold","pink","brown","grey","purple","blue","blue")
-x = [-200,100]
-y = [-20,-80]
-t.speed(10)
-for i in range(0,19):
-    t.penup()
-    t.color(color_01[i])
-    t.goto(x[0],100-10*i)
-    t.pendown()
-    t.goto(y[0],100-10*i)
+# r_1 = {"name":"xiong","age":18,"job":"student"}
+# r_2 = {"name":"jun","age":18,"job":"techer"}
+# r_3 = {"name":"yong","age":18,"job":"runer"}
+# a = [r_1,r_2,r_3]
+# for i in range(len(a)):
+#         print(a[i].get("name"),a[i].get("age"),a[i].get("job"))
 
-for j in range(0,19):
-    t.penup()
-    t.color(color_01[j])
-    t.goto(x[0]+10*j,x[1])
-    t.pendown()
-    t.goto(x[0]+10*j,y[1])
 
-t.hideturtle()
-turtle.done()
+# a = [1,3,5,7,7,7,5,3,1]
+# for j in a[:]:
+#     if j == 7:
+#         a.remove(j)
+#     print(a)
+#
+# print("*****************************************")
+# b = [1,3,5,7,7,7,5,3,1]
+# for i in b:
+#     if i == 7:
+#         b.remove(i)
+#     print(b)
+#
+# a = "*  to be or not to be , this is a 熊 question?  *"
+# b = a.split(" ")
+# print(b,type(b))
+# print(a.startswith("to be or"),a.endswith("a question?"),len(a))
+# print(a.find("o"),a.rfind("o"),a.isalnum())
+# print(a.strip(),a.rstrip("*"),a.lstrip("*"))
+
+# d = ["to be or not to be "]
+# c = "*".join(d)
+# print(c,type(c))
+
+# a = "i love You"
+# print(a.title(),a.upper(),a.lower(),a.capitalize(),a.swapcase())
+
+#cneter() ljust() rjust()
+a = "abcd"
+print(a.center(10,"*"),a.rjust(10,"*"),a.ljust(10,"*"))
