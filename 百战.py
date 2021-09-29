@@ -183,5 +183,111 @@ a=[1,3,5,7,7,7,5,3]
 # print(a.title(),a.upper(),a.lower(),a.capitalize(),a.swapcase())
 
 #cneter() ljust() rjust()
-a = "abcd"
-print(a.center(10,"*"),a.rjust(10,"*"),a.ljust(10,"*"))
+# a = "abcd"
+# print(a.center(10,"*"),a.rjust(10,"*"),a.ljust(10,"*"))
+
+# a = "xiong"
+# print("{:0>8}".format(a))
+# print("{:1^9}".format(a))
+# print("{:4<9}".format(a))
+
+# import io
+# a = "i'm a good boy!!！"
+# sio = io.StringIO(a)
+# sio.getvalue()
+# sio.seek(7)
+# sio.write("g")
+# print(sio.getvalue())
+#
+# a = [1,3,5,7,7,7,5,3,1]
+# a.append('xiong')
+# a.extend([1,2,3,4])
+# a.insert(3,"you")
+# a.remove(1)
+# a.clear()
+# print(a)
+# a = (i*3 for i in range(10) if i%2 == 0)
+# print(a.__next__())
+# print(a.__next__())
+# b = tuple(a)
+# print(b)
+#
+# a = {
+#     "A":["b","c"]
+# }
+# print(a)
+#
+# b = dict(A=["a","b"])
+# c = dict([("name","xiong"),("age",18)])
+# print(a)
+# print(b)
+# print(c)
+# #
+# # a = ["name","age"]
+# # b = ["xiong",18]
+# # c = dict(zip(a,b))
+# # print(bin(hash("name")))
+#
+# a = {1,2,3,4}
+# a.add(5)
+# print(a)
+# c = [1,43,2]
+# b = set(c)
+#
+# print(a|b)
+# print(a&b)
+# print(a-b)
+#
+# a = list(range(10))
+# print(a)
+# a = int(input("输入一个数字"))
+# if a>10:
+#     print(a)
+# else:
+#     print("a 不大于10")
+
+# a = {"name":"xong","age":18,"job":"student"}
+# for i in a.keys():
+#     print(i)
+# for j in a.items():
+#     print(j)
+# for x in a.values():
+#     print(x)
+
+# for i in range(5):
+#     for j in range(1,6):
+#         print(i,end='\t')
+#     print()
+# count = 0
+# salary = []
+# while True:
+#     a =input("输入员工的薪资：")
+#     if a.upper() == 'Q':
+#         print("录入完成")
+#         break
+#     if float(a) < 0:
+#         print("输入的薪资有问题，请输入员工的薪资")
+#         continue
+#     count+=1
+#     salary.append(float(a))
+# print("员工数量是{0},员工薪资明细{1},平均工资{2}".format(count,salary,sum(salary)/count))
+
+# a = ["xiong","jun","yong"]
+# b = [18,18,18]
+# c = ["老师","学生","程序员"]
+# for i,j,k in zip(a,b,c):
+#     print("{0},{1},{2}".format(i,j,k))
+# a = [(a,b) for a in range(10) for b in range(20)]
+# print(a)
+#
+# a = "i'm a good boy and i like sports"
+# d = {c:a.count(c) for c in a}
+# print(d)
+#
+# import io
+# a = "i'am a good boy"
+# sio =io.StringIO(a)
+# sio.getvalue()
+# sio.seek(4)
+# sio.write("熊")
+# print(sio.getvalue())
