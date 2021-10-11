@@ -291,3 +291,340 @@ a=[1,3,5,7,7,7,5,3]
 # sio.seek(4)
 # sio.write("熊")
 # print(sio.getvalue())
+# c = 5
+# def Max_01(a,b):
+#     '''这是一个求最大值的函数'''
+#     global c
+#     if a>b:
+#         print("较大值为a:",a)
+#     else:
+#         print("较大值为b：",b)
+#     print(locals())
+#     print(globals())
+#     return([a,b,c])
+# print(Max_01(10,20))
+# import math
+# import time
+# def time_01():
+#     '''测试局部变量和全局变量的时间'''
+#     start = time.time()
+#     for i in range(10000000):
+#         math.sqrt(30)
+#     end = time.time()
+#     print("执行的时间是{0}：".format(end-start))
+# def time_02():
+#     start = time.time()
+#     b = math.sqrt
+#     for j in range(10000000):
+#         b(30)
+#     end = time.time()
+#     print("执行的时间是{0}：".format(end-start))
+# print(time_01())
+# print(time_02())
+
+# import copy
+# a = (10,20,[30,40])
+# b = copy.copy(a)
+# print(id(a))
+# def mpy_01(m):
+#     print(id(m))
+#     m[2][0] = 888
+#     return(m)
+# print(mpy_01(b))
+# print(a)
+# def mypy_01(a,b,**c):
+#     print(a,b,c)
+# mypy_01(1,2,name="xiong",age=18)
+# g = [lambda a:a*2 , lambda b:b*2 , lambda c:c*2]
+# print(g[0](6),g[1](7),g[2](10))
+# a = 10
+# b = 10
+# dict = {"a":10,"b":20}
+# print(eval("a+b",dict))
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return(n*factorial(n-1))
+# for i in range(10):
+#     print(i,"!=",factorial(i))
+# def mypy_01():
+#     print("running")
+#     def mypy_02():
+#         print("running")
+#     mypy_02()
+# print(mypy_01())
+# def mypy_01(isChinese,name,familyname):
+#     def mypy_02(a,b):
+#             print("{0},{1}".format(a,b))
+#     if isChinese:
+#         mypy_02(familyname,name)
+#     else:
+#         mypy_02(name,familyname)
+# print(mypy_01(True,"junyong","xiong"))
+# def mypy_01(a):
+#     b = str(a)
+#     c = b[::-1]
+#     return(c)
+# print(mypy_01(3456))
+
+# def max_01(a,b):
+#     '''本函数是求两个数之间的最大值'''
+#     if a>b:
+#         print("较大数为：{0}".format(a))
+#     else :
+#         print("最大数为：{0}".format(0))
+# max_01(10,9)
+# help(max_01.__doc__)
+#
+# print("********************************")
+#
+# def print_start(a,b):
+#     return((a+b)/2)
+#
+# c = print_start(10,20)
+# print(c)
+#
+# a=10
+# def global_01():
+#         a = 100
+#         print(a)
+#         print(locals())
+#         print(globals())
+#
+# global_01()
+# print(a)
+# class stident():
+#     school = "jxkjsfdx"
+#     def __init__(self,name,score):
+#         self.name = name
+#         self.score = score
+#     def score_01(self):
+#         print(self.name,"分数是：",self.score)
+#         print("你的公司是：",stident.school)
+# b = stident("熊俊勇",100)
+# b.score_01()
+#
+# print(dir(stident))
+# print(stident.__dict__)
+# print(isinstance(stident,type))
+
+# class Student_01:
+#     company = "iong"
+#     @staticmethod
+#     def add(a,b):
+#         print("{0}+{1} = {2}".format(a,b,(a+b)))
+#         return a+b
+# Student_01.add(10,20)
+
+# class Acountsalary:
+#     def __call__(self,salary):
+#         daysalary = salary//30
+#         hourday = daysalary//8
+#         return dict(daysalary=daysalary,hoursalary=hourday)
+# s1 = Acountsalary()
+# print(s1(20000))
+
+# class Student:
+#     '''类属性'''
+#     company = "iong"
+#     count = 0
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+#         Student.count = Student.count+1
+#     def say_hi(self):
+#         print("名字是{0},年龄是{1}".format(self.name,self.age))
+#         print("输入了{0}条信息".format(Student.count))
+# s1 = Student("熊俊勇",19)
+# s2  = Student("gao",20)
+# s3 = Student("1",30)
+# s1.say_hi()
+
+# class classmethod:
+#     '''类方法'''
+#     company = "iong"
+#     @classmethod
+#     def abc(cls):
+#         print(cls.company)
+# classmethod.abc()
+#
+# class Vo:
+#     '''静态类方法'''
+#     @staticmethod
+#     def cde(a,b):
+#         print("{0}+{1}={2}".format(a,b,(a+b)))
+# Vo.cde(10,20)
+
+# class Vo:
+#     def __call__(self,):
+#         print("销毁的对象{0}".format(self))
+# p1 = Vo()
+# p2 = Vo()
+# del p2
+# print("程序结束)
+# class Book:
+#     __company = "iong"
+#
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.__age  = age
+#     def __work(self):
+#         print("好好工作，天天向上")
+#         print("公司名字是{0}".format(Book.__company))
+#         print("年龄是{0}".format(self.__age))
+# e = Book("xiong",19)
+# e._Book__work()
+# print(dir(Book))
+# print(Book.__dict__)
+# import turtle
+# class MyRectangle:
+#     def __init__(self,x = 0,y = 0,width = 100,height = 100):
+#         self.x = x
+#         self.y = y
+#         self.width = width
+#         self.height = height
+#     def GetArea(self):
+#         print(self.width * self.height)
+#     def GetPerimeter(self):
+#         print(2*(self.width+self.height))
+#     def Draw(self):
+#         p = turtle.Pen()
+#         turtle.width(10)
+#         turtle.speed(8)
+#         p.penup()
+#         p.goto(self.x,self.y)
+#         p.pendown()
+#         p.goto(self.x,self.height)
+#         p.goto(self.width,self.height)
+#         p.goto(self.width,self.x)
+#         p.goto(self.x,self.y)
+#
+#         turtle.done()
+# tem_01 = MyRectangle(x = 9,y = 9,width = 200,height = 200)
+# tem_01.GetArea()
+# tem_01.GetPerimeter()
+# tem_01.Draw()
+# class Penson:
+#
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+#
+#     def M_01(self):
+#         print("我的年龄是：",self.age)
+#     def M_02(self):
+#         print("我的名字是{0}".format(self.name))
+#
+# class Student(Penson):
+#
+#     def __init__(self,name,age,score):
+#         Penson.__init__(self,name,age)
+#         self.score = score
+#     def M_02(self):
+#         print("报告，我的名字是：{0}".format(self.name))
+# class Tercher(Penson):
+#     def __init__(self, name, age, score):
+#         Penson.__init__(self, name, age)
+#         self.score = score
+# s = Student("xiong",18,90)
+# s.M_01()
+# s.M_02()
+#
+# c = Tercher("xiong",10,90)
+# c.M_01()
+# c.M_02()
+
+# class M_01:
+#     pass
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+#     @property
+#     def M_02(self):
+#         print(self.age,self.name)
+#         return self.age
+#     @M_02.setter
+#     def M_03(self,age):
+#         if 0<age<100:
+#             self.age = age
+#         else:
+#             print("输入的年龄有误")
+# a = M_01("ion",190)
+# print(a.age)
+# a.M_03 = 1000
+# class A :
+#     def A_01(self):
+#         print("a:",self)
+#
+# class B(A):
+#     def A_01(self):
+#         # A.A_01(self)
+#         super().A_01()
+#         print("B:",self)
+#
+# B().A_01()
+
+# class Person:
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+#     def Student(self):
+#         print("Hello World!!!")
+#         print("我的名字是{},我的年龄是{}".format(self.name,self.age))
+# a = Person("熊俊勇",19)
+# a.Student()
+
+# sum = 0
+# for i in range(1,101):
+#     sum+=i
+# print(sum)
+#
+# sum_01 = 0
+# for i in range(10,0,-1):
+#     sum_01+=i
+# print(sum_01)
+
+
+# import math
+# a = [i for i in range(100) if i%2 != 0]
+# print(type(a))
+# total = sum(a)
+# print(total)
+#
+# b = [i for i in range(101) if i%2 == 0]
+# total = sum(b)
+# print(total)
+j = int(input("输入您的工资："))
+i = int(input("输入数字6开启购物模式:"))
+x = (["-iphone",6888],["-MacPro",14800],["-小米6",2499],["-Coffee", 31],["-Book",60],["-Nike",699])
+b = []
+sum_01 = j
+flag = 1
+while i==6:
+    print("本商店提供的商品有（您可以选择物品编号来购买）：")
+    for y in range(len(x)):
+        print(y,x[y][0],"\t",x[y][1])
+    c = int(input("输入您要买的商品编号（输入666退出购物模式）:"))
+    if c == 666:
+        break
+    # while flag:
+    if c >len(x):
+        c = int(input("输入的编号错误，请重新输入编号:\n"))
+    for a in range(len(x)):
+        if a==c:
+            if sum_01<x[a][1]:
+                print("您的工资不支持您买这件商品,请选择别的商品:",x[a])
+                # c = int(input("请重新输入您要买的商品编号:"))
+            else:
+                j -= j-x[a][1]
+                sum_01 -= j
+                print("您的资金剩余：",sum)
+                b.append(x[a])
+                print("你的购物车中有：",b)
+    flag = int(input("输入0结束购物模式，否则按任意数字购物继续"))
+    if flag == 0:
+        break
+print("购物愉快，您剩余的资金为：{0},您的购物车中有；{1}".format(j,b[:]))
+
+
